@@ -16,6 +16,7 @@
 		55C8C58626B1F61E0041C0DF /* TokenDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8C58526B1F61E0041C0DF /* TokenDriver.swift */; };
 		55C8C58826B1F61E0041C0DF /* TokenSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8C58726B1F61E0041C0DF /* TokenSession.swift */; };
 		55C8C58D26B1F61E0041C0DF /* CTKPersistentTokenExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55C8C57E26B1F61E0041C0DF /* CTKPersistentTokenExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55C8C59626B1F9900041C0DF /* test.cer in Resources */ = {isa = PBXBuildFile; fileRef = 55C8C59526B1F9900041C0DF /* test.cer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		55C8C58726B1F61E0041C0DF /* TokenSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenSession.swift; sourceTree = "<group>"; };
 		55C8C58926B1F61E0041C0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C8C58A26B1F61E0041C0DF /* CTKPersistentTokenExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CTKPersistentTokenExtension.entitlements; sourceTree = "<group>"; };
+		55C8C59526B1F9900041C0DF /* test.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.cer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		55C8C55E26B1F5950041C0DF = {
 			isa = PBXGroup;
 			children = (
+				55C8C59526B1F9900041C0DF /* test.cer */,
 				55C8C56926B1F5950041C0DF /* CTKPersistentToken */,
 				55C8C58226B1F61E0041C0DF /* CTKPersistentTokenExtension */,
 				55C8C57F26B1F61E0041C0DF /* Frameworks */,
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C8C57226B1F5970041C0DF /* Preview Assets.xcassets in Resources */,
+				55C8C59626B1F9900041C0DF /* test.cer in Resources */,
 				55C8C56F26B1F5970041C0DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CTKPersistentTokenExtension/CTKPersistentTokenExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAL7AFJ28;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -443,6 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandonweeks.CTKPersistentToken.CTKPersistentTokenExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -452,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CTKPersistentTokenExtension/CTKPersistentTokenExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAL7AFJ28;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -463,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandonweeks.CTKPersistentToken.CTKPersistentTokenExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};

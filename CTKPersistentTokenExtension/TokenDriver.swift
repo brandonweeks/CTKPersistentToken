@@ -10,7 +10,12 @@ import CryptoTokenKit
 class TokenDriver: TKTokenDriver, TKTokenDriverDelegate {
 
     func tokenDriver(_ driver: TKTokenDriver, tokenFor configuration: TKToken.Configuration) throws -> TKToken {
-        return Token(tokenDriver: self, instanceID: configuration.instanceID)
+        NSLog("Entering TokenDriver#tokenDriver")
+        NSLog("configuration.keychainItems: \(configuration.keychainItems)")
+        let token = try Token(tokenDriver: self, instanceID: configuration.instanceID)
+        NSLog("token.keychainContents: \(String(describing: token.keychainContents))")
+        NSLog("Exiting TokenDriver#tokenDriver")
+        return token
     }
 
 }
